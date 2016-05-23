@@ -16,8 +16,10 @@ bot.on("text", function(msg) {
     var date = msg.date;
     var uid = msg.from.uid;
 
-    if (messageText === "/test") {
+    if (text === "/test") {
         sendMessage(cid, "thx! I'm fine");
+    } else {
+        sendMessage(cid, "Парсер в процессе разработки. Оставайтесь на связи.");
     }
     console.log(msg);
 });
